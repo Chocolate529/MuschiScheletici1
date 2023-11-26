@@ -1,0 +1,87 @@
+body{
+    background-color: #333333;
+    display:flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.human-body {
+    padding-top: 240px;
+    position: relative;
+    display: block;
+    left:80%;
+    top: 30px;
+}
+.human-body svg:hover {
+    cursor: pointer;
+}
+.human-body svg:hover path {
+    fill: #ff7d16;
+}
+.human-body svg {
+    position: absolute;
+    left: 50%;
+    fill: #57c9d5;
+}
+.human-body svg.head {
+    margin-left: -28.5px;
+    top: -30px;
+}
+.human-body svg.shoulder {
+    margin-left: -68px;
+    top: 100px;
+}
+.human-body svg.arm {
+    margin-left: -199px;
+    top: 200px;
+}
+.human-body svg.cheast {
+    margin-left: -32.5px;
+    top: 125px;
+}
+.human-body svg.stomach {
+    margin-left: -37.5px;
+    top: 230px;
+}
+.human-body svg.legs {
+    margin-left: -102px;
+    top: 381px;
+    z-index: 9999;
+}
+.human-body svg.hands {
+    margin-left: -148.5px;
+    top: 370px;
+    
+}
+
+#area {
+    display: block;
+    width: 100%;
+    clear: both;
+    padding: 10px;
+    text-align: left;
+    font-size: 25px;
+    font-family: Courier New;
+    color: #a5a5a5;
+}
+
+#area #data {
+    color: rgb(250, 246, 246);
+}
+
+#area div{
+    position: absolute;
+    max-width: 60%;
+}
+
+@media screen and (max-width: 600px) {
+    #area{
+        padding-top: 900px;
+    }
+    body{
+        display:inline-flex;
+    }
+    .human-body{
+        margin-left: 100px;
+    }
+}
